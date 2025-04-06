@@ -30,4 +30,4 @@ export class LineMen {
   isProfileComplete: boolean;
 }
 
-export const UserSchema = SchemaFactory.createForClass(LineMen);
+export const LineSchema = SchemaFactory.createForClass(LineMen);
