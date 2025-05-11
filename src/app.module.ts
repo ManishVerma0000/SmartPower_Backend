@@ -7,9 +7,12 @@ import { LinemenModule } from './linemen/linemen.module';
 import { DatabaseModule } from './database/conn';
 import { LineModule } from './line/line.module';
 import { FirebaseModule } from './firebase/firebase.module';
+import { PowerHouseModule } from './power-house/power-house.module';
+import { SuperAdminModule } from './super-admin/super-admin.module';
+
 
 @Module({
-  imports: [AdminModule, UserModule, LinemenModule,DatabaseModule, LineModule,FirebaseModule],
+  imports: [AdminModule, UserModule, LinemenModule,DatabaseModule, LineModule,FirebaseModule, PowerHouseModule, SuperAdminModule],
   controllers: [AppController],
   providers: [AppService],
 })

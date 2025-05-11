@@ -4,6 +4,7 @@ export enum Success_Message {
   USER_LOGGED_IN = 'User is logged in successfully',
   LINEMEN_CREATED_SUCCESSFULLY = 'Line men created successfully',
   LINEMEN_LOGGED_IN_SUCCESSFULLY = 'Line men logged in successfully',
+  MESSAGE_CREATED_SUCCESSFULLY = 'Message created successfully',
 }
 
 export enum STATUS_CODE {
@@ -24,4 +25,6 @@ export enum ERROR_MESSAGE {
   LINEMEN_LOGGED_IN = 'Line men logged in error',
   USER_LOGGED_ERROR = 'User is not logged in  error occurs',
   LINE_CREATION_ERROR = 'Error occurs when the line is created',
+  INVALID_USER = 'User is invalid',
+  MESSAGE_CREATED_SUCCESSFULLY_ERROR = 'Message is not created',
 }

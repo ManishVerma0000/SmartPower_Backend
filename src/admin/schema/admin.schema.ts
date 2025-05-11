@@ -1,10 +1,10 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { HydratedDocument } from 'mongoose';
 
-export type LineMenDocument = HydratedDocument<LineMen>;
+export type AdminDocument = HydratedDocument<Admin>;
 
 @Schema()
-export class LineMen {
+export class Admin {
   @Prop()
   name: string;
 
@@ -15,12 +15,6 @@ export class LineMen {
   password: string;
 
   @Prop()
-  profileImageUrl: string;
-
-  @Prop([String])
-  line: string[];
-
-  @Prop()
   district: string;
 
   @Prop()
@@ -28,12 +22,10 @@ export class LineMen {
 
   @Prop({ default: Date.now })
   lastLoginAt: Date;
-
   @Prop({ default: Date.now })
   profileUpdatedAt: Date;
-
-  @Prop()
-  isProfileComplete: boolean;
+  @Prop({ default: true })
+  isAdmin: boolean;
 }
 
-export const LineMenSchema = SchemaFactory.createForClass(LineMen);
+export const AdminSchema = SchemaFactory.createForClass(Admin);

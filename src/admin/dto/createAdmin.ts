@@ -1,10 +1,12 @@
 import { IsString } from 'class-validator';
 
-export class CreateLine {
+export class createAdminDto {
   @IsString()
-  lineName: string;
+  email: string;
   @IsString()
-  powerHouse: string;
+  password: string;
+  @IsString()
+  state: string;
   @IsString()
   district: string;
 }
